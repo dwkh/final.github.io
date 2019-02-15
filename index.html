@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidebar {
+            margin: 0px;
+            padding: 12px;
+            width: 240px;
+            background-color: #1dc8eace;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+
+
+        .sidebar a:hover:not(.active) {
+            background-color: rgba(255, 255, 255, 0.233);
+            color: white;
+        }
+
+        h3 {
+            font-size: 24px;
+            padding: 0px;
+            margin: auto;
+        }
+
+        div.content {
+            margin-left: 240px;
+            padding: 0px;
+            height: 1000px;
+
+        }
+
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .sidebar a {
+                float: left;
+            }
+            div.content {
+                margin-left: 0;
+            }
+            .header {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+
+        }
+
+        .header {
+            width: 100%;
+            height: 55px;
+
+
+
+        }
+
+        .navbar-inverse {
+            background-color: #dfdfdf82;
+            border-color: #ffffff;
+        }
+
+        .h3{
+            color: white;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h3 align="center"><b>CREATIVE TIM</b></h3>
+        <hr>
+        <a href="#home">
+            <i class="fa fa-fw fa-home"></i>&nbsp;DASHBOARD</a>
+        <a href="#news">
+            <i class="fa fa-fw fa-wrench"></i>&nbsp;USER PROFILE</a>
+        <a href="#contact">
+            <i class="fa fa-fw fa-user"></i>&nbsp; TABLE LIST</a>
+        <a href="#about">
+            <i class="fa fa-fw fa-envelope"></i>&nbsp;TYPOGRAPHY</a>
+        <a href="#about">
+            <i class="fa fa-fw fa-envelope"></i>&nbsp;ICONS</a>
+        <a href="#about">
+            <i class="fa fa-fw fa-envelope"></i>&nbsp;MAPS</a>
+        <a href="#about">
+            <i class="fa fa-fw fa-envelope"></i>&nbsp;NOTIFICATION</a>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <nav class="navbar navbar-inverse " color-on-scroll="500">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">DASHBOARD</a>
+                    </div>
+                    <ul class="nav navbar-nav ">
+                        <li class="active">
+                            <a href="#"><i class="fa fa-fw fa-home"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <i class="fa fa-fw fa-wrench"></i>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Page 1-1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Page 1-2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Page 1-3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <div class="data">
+            <div class="container-fluid">
+
+                <div class="container field">
+                    <div class="row  ">
+                        <div class="col-md-4   ">
+                            <img class="responsive"  src="pie.png">
+
+                        </div>
+                        <div class="col-md-8  card">
+
+                            <img class="responsive" src="graph.png">
+                        </div>
+                    </div>
+                    <div class="row  ">
+                        <div class="col-md-6   card ">
+                            <img class="responsive"  src="hesto.png">
+
+                        </div>
+                        <div class="col-md-6   card ">
+                            <div class="card checkb">
+                                <div class="card-header ch">
+                                    <h4>Tasks</h4>
+                                    <p class="card-category">Backend Developement</p>
+                                </div>
+                                <div class="card-body">
+                                        <div class="table-full-width">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="checkbox" value="">
+                                                                    <span class="form-check-sign"></span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>Sign contract for "What are conference organizers afraid of?"</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="" class="btn btn-info btn-simple btn-link" data-original-title="Edit Task">
+                                                                <i class="fa fa-edit"></i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-link" data-original-title="Remove">
+                                                                <i class="fa fa-times"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="checkbox" value="" checked="">
+                                                                    <span class="form-check-sign"></span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="" class="btn btn-info btn-simple btn-link" data-original-title="Edit Task">
+                                                                <i class="fa fa-edit"></i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-link" data-original-title="Remove">
+                                                                <i class="fa fa-times"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="checkbox" value="" checked="">
+                                                                    <span class="form-check-sign"></span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="" class="btn btn-info btn-simple btn-link" data-original-title="Edit Task">
+                                                                <i class="fa fa-edit"></i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-link" data-original-title="Remove">
+                                                                <i class="fa fa-times"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label">
+                                                                    <input class="form-check-input" type="checkbox" value="" checked="">
+                                                                    <span class="form-check-sign"></span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                        <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit</td>
+                                                        <td class="td-actions text-right">
+                                                            <button type="button" rel="tooltip" title="" class="btn btn-info btn-simple btn-link" data-original-title="Edit Task">
+                                                                <i class="fa fa-edit"></i>
+                                                            </button>
+                                                            <button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-link" data-original-title="Remove">
+                                                                <i class="fa fa-times"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                </div>
+                                <div class="card-footer ">
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <footer class="page-footer foot_d font-small pt-4">
+
+                <div class="container-fluid f_data text-center text-md-left">
+                
+                    <div class="row">
+        
+                        <div class="col-md-6 mt-md-0 mt-3">
+        
+                            <h5 class="text-uppercase">Contect us</h5>
+                            <p>Powered By : adi Sports (India) Pvt. Ltd</p>
+        
+                        </div>
+        
+                        <hr class="clearfix w-100 d-md-none pb-3">    
+        
+                        <div class="col-md-3 mb-md-0 mb-3">
+    
+                            <h5 class="text-uppercase">+91-8571967916</h5>
+        
+                        </div>
+        
+                        <div class="col-md-3 mb-md-0 mb-3">        
+                            <h5 class="text-uppercase">Sign Up SIGN UP FOR EXCLUSIVE SALES AND PRODUCT NEWS</h5>
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+                <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                    <a href="https://shop4reebok.com/"> Reebok.com</a>
+                </div>
+            </footer>
+         </div>
+
+</body>
+
+</html>
+
+<style>
+    .foot_d{
+        height: 140px;
+    }
+    .f_data{
+        height: 100px;
+    }
+
+
+    .responsive {
+  width: 100%;
+  height: auto;
+}
+    .ch{
+        padding: 15px 15px 0;
+    background-color: #FFFFFF;
+    border-bottom: none !important;
+    }
+    .checkb{
+        background-color: rgb(255, 255, 255);
+    }
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 10px;
+    }
+
+    .field {
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .data {
+        width: 100%;
+        height: 100%;
+
+        background-color: #e2e2e2;
+    }
+
+    nev.li {
+        color: #1DC7EA;
+    }
+</style>
